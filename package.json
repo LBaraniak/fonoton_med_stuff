@@ -1,0 +1,28 @@
+{
+  "name": "fonoton_med_stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LBaraniak/fonoton_med_stuff.git"
+  },
+  "keywords": [
+    "med_stuff"
+  ],
+  "author": "Łukasz Baraniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LBaraniak/fonoton_med_stuff/issues"
+  },
+  "homepage": "https://github.com/LBaraniak/fonoton_med_stuff#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
