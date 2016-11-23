@@ -2,29 +2,40 @@
 
 $fon-blue: #3498db
 
+=transition($transit)
+  -webkit-transition: $transit
+  -moz-transition: $transit
+  -o-transition: $transit
+  transition: $transit
+
+=gradient($grad1, $grad2, $grad3)
+  background-image: -webkit-linear-gradient($grad1, $grad2, $grad3)
+  background-image: -moz-linear-gradient($grad1, $grad2, $grad3)
+  background-image: -o-linear-gradient($grad1, $grad2, $grad3)
+  background-image: linear-gradient($grad1, $grad2, $grad3)
+
+=border-radius($radius)
+  -webkit-border-radius: ($radius)
+  -moz-border-radius: ($radius)
+  border-radius: ($radius)
+
 * 
   box-sizing: border-box
   margin: 0
   padding: 0
 
-
 [class*='col-'] 
   padding: 0
-
 
 .container-fluid 
   margin: 0
   padding: 0
 
-
 .row 
   margin: 0
 
-
-
-h1, h2, h3 
+h1, h2, h3, h4 
   font-family: 'Lato', sans-serif
-
 
 body 
   height: 100%
@@ -35,20 +46,8 @@ body
   color: #000
   font-family: 'Source Sans Pro', sans-serif
 
-
-
-.message 
-  text-align: center
-  p 
-    margin-top: 20px
-
-
 .navbar-nav > li > a 
   padding: 0px
-
-
-.navbar-inverse 
-  border: 0
 
 .navbar 
   background-color: #565657
@@ -58,59 +57,50 @@ body
   top: 0
   z-index: 99
 
+.navbar-inverse
+  border: 0
+  .navbar-nav
+    li a 
+      color: #fff
+    .active 
+      a, 
+      a:focus, 
+      a:hover 
+        background-color: $fon-blue
+        color: #FFFFFF
 
-.navbar-inverse .navbar-nav>.active>a, 
-.navbar-inverse .navbar-nav>.active>a:focus, 
-.navbar-inverse .navbar-nav>.active>a:hover 
-  background-color: $fon-blue
-  color: #FFFFFF
-
-
-.nav ul 
-  text-align: center
-  color: $fon-blue
-
-
-.nav li 
-  text-align: center
-  padding: 5px 2px
-
-
-.navbar-inverse .navbar-nav li a 
-  color: #fff
-
-
-.nav .btn-blue, header .btn-blue
-  display: inline-block
-  margin: 0
-  padding: 8px 8px
-  min-width: 120px
-  font-size: 15px
-  font-weight: bold
-  border: 2px solid;
-  border-radius: 5px
-  cursor: pointer
-  background-color: inherit
-  background-position: 100% 0
-  background-size: 300%
-  transition: 0.4s
-  border-color: $fon-blue
-  color: $fon-blue
-  background-image: linear-gradient(125deg, $fon-blue 50%, transparent 50%) 
+.nav 
+  ul 
+    text-align: center
+    color: $fon-blue
+  li 
+    text-align: center
+    padding: 5px 2px
+  .btn-blue
+    display: inline-block
+    margin: 0
+    padding: 8px 8px
+    min-width: 120px
+    font-size: 15px
+    font-weight: bold
+    border: 2px solid;
+    +border-radius(5px)
+    cursor: pointer
+    background-color: inherit
+    background-position: 100% 0
+    background-size: 300%
+    +transition(0.5s)
+    border-color: $fon-blue
+    color: $fon-blue
+    +gradient(125deg, $fon-blue 50%, transparent 50%) 
+  .active a,
+  .btn-blue:hover
+    background-position: 0 100%
+    color: #fff
 
 
 .navbar-collapse 
   padding: 0 10%
-
-
-.navbar-collapse .btn-blue 
-  width: 100%
-
-
-.nav .btn-blue:hover, .navbar-nav > .active > a> .btn-blue, header .btn-blue:hover  
-  background-position: 0 100%
-  color: #fff
-
 
 .img-fon-small 
   border: 2px solid $fon-blue
@@ -118,14 +108,11 @@ body
   padding: 4px
   height: 56px
   float: left
-  border-radius: 5px
+  +border-radius(5px)
   cursor: pointer
-
 
 .navbar-brand 
   padding: 2px 15px
-
-
 
 header 
   height: 100vh
@@ -140,7 +127,6 @@ header
     span 
       color: #777
 
-
 .big-logo 
   margin-top: 10vh
   border-radius: 30px
@@ -148,9 +134,6 @@ header
   background-color: #fff
   img 
     width: 100%
-
-
-
 
 section
   height: 100%
@@ -170,10 +153,13 @@ h4,
 h3,
 .fa-li
   color: $fon-blue
+  
 .cechy
   margin-left: 80px
+  
 h4
   font-weight: 700
+  
 .offer-head
   font-size: 1.4em
 
@@ -196,7 +182,7 @@ h4
   h3 
     margin-top: 5px
   span 
-    color: #3498db
+    color: $fon-blue
     font-weight: 900
   label 
     display: block
@@ -216,7 +202,7 @@ h4
     margin-top: 3px
     font-size: 0.9em
     color: #3a3a3a
-    border-radius: 5px
+    +border-radius(5px)
   textarea 
     height: 100px
     background: #efefef
@@ -224,7 +210,6 @@ h4
   textarea
     &:focus 
       border: 1px solid #97d6eb
-
 
 #submit 
   width: 130px
@@ -238,7 +223,6 @@ footer
   text-align: right
   font-size: small
 
-
 @media (min-width: 768px) and (max-width: 991px) 
   .img-fon-small 
     padding: 2px
@@ -246,7 +230,6 @@ footer
   .navbar-brand 
     padding: 3px 0px
   
-
 @media (max-width: 767px) 
   .img-fon-small 
     padding: 4px
