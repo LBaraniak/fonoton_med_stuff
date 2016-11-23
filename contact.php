@@ -3,9 +3,9 @@
     $email = $_POST['email'];
 	$tel = $_POST['tel'];
     $message = $_POST['message'];
-    $from = 'From: Laboratorium'; 
+    $from = 'From: Sprzęt medyczny'; 
     $to = 'handlowy@fonoton.pl'; 
-    $subject = 'Wiadomość ze strony laboratorium';
+    $subject = 'Wiadomość ze strony Sprzęt medyczny';
     $human = $_POST['human'];
 			
     $body = "OD: $name\n E-Mail: $email\n Numer telefonu: $tel\n Wiadomość:\n $message";

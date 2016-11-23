@@ -136,6 +136,34 @@ section {
     color: #3498db;
     text-align: center; }
 
+h4,
+h3,
+.fa-li {
+  color: #3498db; }
+
+.cechy {
+  margin-left: 80px; }
+
+h4 {
+  font-weight: 700; }
+
+.offer-head {
+  font-size: 1.4em; }
+
+.img-tab {
+  margin: 20px; }
+
+.dyst {
+  margin-top: 20px; }
+
+.btn-lg {
+  width: 80%;
+  margin: 20px; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 800px; } }
+
 .contact {
   text-align: center; }
   .contact h3 {
