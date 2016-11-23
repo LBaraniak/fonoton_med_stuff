@@ -124,13 +124,15 @@ header {
     width: 100%; }
 
 section {
-  min-height: 100vh;
+  max-height: 100vh;
   padding: 70px 0 10px 0;
   color: #000; }
 
-.audiometr {
+.audiometr,
+.tymp {
   background-color: white; }
-  .audiometr h2 {
+  .audiometr h2,
+  .tymp h2 {
     font-size: 4rem;
     font-weight: 700;
     color: #3498db;
@@ -160,9 +162,9 @@ h4 {
   width: 80%;
   margin: 20px; }
 
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 800px; } }
+.nav-tabs {
+  font-size: 20px;
+  font-weight: 700; }
 
 .contact {
   text-align: center; }
@@ -192,7 +194,7 @@ h4 {
     border-radius: 5px; }
   .contact textarea {
     height: 100px;
-    background: url("../img/fale.png") center no-repeat #efefef; }
+    background: #efefef; }
   .contact input:focus,
   .contact textarea:focus {
     border: 1px solid #97d6eb; }
@@ -230,5 +232,9 @@ footer {
     text-align: center; }
   .big-logo {
     margin-top: 0px; } }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 700px; } }
 
 /*# sourceMappingURL=style.css.map */
