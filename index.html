@@ -7,9 +7,7 @@
 		<title>Fonoton - Laboratorium Otoplastyczne</title>
 		<meta name="author" content="Łukasz Baraniak">
 		
-		<script src="js/jquery.min.js"></script>		 
-		<script src="code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,23 +18,8 @@
      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
    		<![endif]-->
 		
-		<script>
-		$(document).ready(function() { 
- 
-			 $('a[href^="#"]').on('click', function(event) {
-			 
-				 var target = $( $(this).attr('href') );
-				 
-				 if( target.length ) {
-					 event.preventDefault();
-					 $('html, body').animate({
-					 scrollTop: target.offset().top
-					 }, 1000);
-				 }
-				 });
-			 
-			});
-		</script>
+		
+		
 	</head>
 	<body data-spy="scroll" data-target="#navbarExample" data-offset="60">
 		<nav id="navbarExample" class="navbar navbar-fixed-top navbar-inverse">
@@ -397,5 +380,27 @@
 				projekt i realizacja <a href="mailto:kontakt.macrodesign@gmail.com"> macrodesign</a>
 			</footer>
 		</div>
+		
+		
+		<script src="js/jquery.min.js"></script>		 
+		<script src="code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function() { 
+ 
+			 $('a[href^="#"]').on('click', function(event) {
+			 
+				 var target = $( $(this).attr('href') );
+				 
+				 if( target.length ) {
+					 event.preventDefault();
+					 $('html, body').animate({
+					 scrollTop: target.offset().top
+					 }, 1000);
+				 }
+				 });
+			 
+			});
+		</script>
 	</body>
 </html>
