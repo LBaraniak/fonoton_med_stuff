@@ -130,10 +130,14 @@ section {
   color: #000; }
 
 .audiometr,
-.tymp {
+.tymp,
+.otoemission,
+.abr {
   background-color: white; }
   .audiometr h2,
-  .tymp h2 {
+  .tymp h2,
+  .otoemission h2,
+  .abr h2 {
     font-size: 4rem;
     font-weight: 700;
     color: #3498db;
@@ -150,8 +154,15 @@ h3,
 h4 {
   font-weight: 700; }
 
-.offer-head {
+.offer-head,
+.oto-head {
   font-size: 1.4em; }
+
+.oto-head {
+  margin-top: 20px; }
+
+.oto-head-bottom {
+  margin-bottom: 20px; }
 
 .img-tab {
   margin: 20px; }
